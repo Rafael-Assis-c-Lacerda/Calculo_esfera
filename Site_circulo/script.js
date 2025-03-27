@@ -34,7 +34,7 @@ function calcular(CAV, raio){
     }
 }
 
-function Raio() {
+function processar() {
     let raio = parseFloat(valorRaio.value);
    
     comp = calcular('C', raio);
@@ -43,11 +43,3 @@ function Raio() {
     printar();
     
 }
-
-bcalcular.addEventListener('mousedown', function(){
-    bcalcular.classList.add('press');
-    Raio();
-})
-bcalcular.addEventListener('mouseup', function(){
-    bcalcular.classList.remove('press');
-})
