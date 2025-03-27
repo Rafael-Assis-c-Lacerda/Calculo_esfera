@@ -2,17 +2,10 @@ var comp;
 var area;
 var vol;
 
-const valorRaio = document.getElementById('valorRaio');
-const bcalcular = document.getElementById('bcalcular');
-
 function printar(){
-    const valorComp = document.getElementById('comprimento');
-    const valorArea = document.getElementById('area');
-    const valorVolume = document.getElementById('volume');
-
-    valorComp.innerHTML = `Comprimento: <span class="valor">${comp.toFixed(2)}</span>`;
-    valorArea.innerHTML = `Área: <span class="valor">${area.toFixed(2)}</span>`;
-    valorVolume.innerHTML = `Volume: <span class="valor">${vol.toFixed(2)}</span>`;
+    comprimento.innerHTML = `Comprimento: <span class="valor">${comp.toFixed(2)}</span>`;
+    area.innerHTML = `Área: <span class="valor">${area.toFixed(2)}</span>`;
+    volume.innerHTML = `Volume: <span class="valor">${vol.toFixed(2)}</span>`;
 }
 
 function calcular(CAV, raio){
@@ -41,5 +34,4 @@ function processar() {
     area = calcular('A', raio);
     vol = calcular('V', raio);
     printar();
-    
 }
