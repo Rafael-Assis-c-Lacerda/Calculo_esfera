@@ -1,0 +1,9 @@
+.banda{
+    color:white;
+    background-color: purple;
+    width: 100%;
+    height: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}

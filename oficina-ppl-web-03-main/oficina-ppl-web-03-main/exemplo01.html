@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <style>
+        *{
+            font-size: 16px;
+        }
+        .container{
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid gray;
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bloco{
+            background-color: blue;
+            color: aliceblue;
+            font-weight: bold;
+            width: 5rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+   
+        <script>
+            var nome;
+        /*
+            nome = prompt("informe seu nome:");
+
+            alert(`hello, ${nome} world`);//mensagem alerta
+            document.write("hello world" + nome);//printar na tela
+            console.log("hello world"); //console desenvolvedor
+        */
+       /*
+            var num1, num2, soma;
+
+            num1 = prompt("informe seu numero:");
+            num2 = prompt("informe seu numero:");
+
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            soma= num1+num2;
+            document.write(`<div class="bloco">${soma}</div>`);
+            */
+           var num;
+
+           num= parseInt(prompt("informe um numero"));
+
+           document.write(`<div class="bloco">${num}^2 = ${Math.pow(num, 2)}</div>`);
+           document.write(`<div class="bloco">log2${num} = ${Math.log2(num, 2).toFixed(2)}</div>`);
+           document.write(`<div class="bloco">raiz${num} = ${Math.sqrt(num, 2)}</div>`);
+        </script>
+    </div>
+</body>
+</html>

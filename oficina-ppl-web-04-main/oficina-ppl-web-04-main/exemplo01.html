@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <style>
+        *{
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            width: 30rem;
+            margin: 1rem auto;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30rem;
+            min-height: 25rem;
+            margin: 1rem auto;
+            border: 1px solid gray;
+            box-shadow: .5rem .5rem .3rem .01rem;
+        }
+        .produto{
+            background-color: purple;
+            color: rgb(18, 255, 18);
+            width: 8rem;
+            height: 8rem;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem rgb(255, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <h1>Resultado</h1>
+    <div class = "container">
+        <script class>
+            /*estrutura codicional (seleção)
+            variavel
+            entrada e saida de dados
+            */
+        var produto = prompt("informe o produto:");
+
+        switch(produto){
+            case "arroz":
+                document.write("<div class = 'produto'> vc comprou arroz </div>");
+                document.write("<div class = 'produto'>8 conto</div>");
+                break;
+            case "cafe":
+            case "café":
+                document.write("<div class = 'produto'>vc comprou cafe</div>");
+                document.write("<div class = 'produto'>88 conto</div>");
+                break;
+            case "feijao":
+            case "feijao":
+                document.write("<div class = 'produto'>vc comprou feijao</div>");
+                document.write("<div class = 'produto'>13 conto</div>");
+                break;
+        }
+        </script>
+    </div>
+</body>
+</html>

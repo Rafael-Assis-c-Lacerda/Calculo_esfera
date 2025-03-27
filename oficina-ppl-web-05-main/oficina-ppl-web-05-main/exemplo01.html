@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+    <script>
+        function somar(){
+            var i=0,vetor=[];
+
+            do{
+                vetor[i++]=prompt("informe o nome");
+            }while(confirm("deseja informar de novo"));
+            resp.innerHTML = "toma: <br />";
+            vetor.forEach((nome,i) => {resp.innerHTML += `${i}) ${nome}<br />`;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id= "entrada1" placeholder="informe um numero">
+    <input type="number" id= "entrada1" placeholder="informe um numero">
+    <button onclick="processar">ok</button>
+    <div id="resp"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div{
+    border: 10px gray solid;
+    width: 23rem;
+    height: 30rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.25rem 0.3rem black;
+}
+image{
+    width: 25rem;
+}
+body{
+    background-color: brown;
+}
+p{
+    color: black;
+}
+button{
+    background-color: chartreuse;
+    color: black;
+    border-width: 1px;
+
+}
